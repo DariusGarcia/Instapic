@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Instapic</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <string name="back4app_app_id">nk0duh5RXzZmPS3mPxBrHKSQNj3J7EkqwwTbZY0G</string>
+    <string name="back4app_client_key">XMwMwRXt2VZEES3x2uelTUmrdYEDW37n9iDbDVmy</string>
 </resources>
