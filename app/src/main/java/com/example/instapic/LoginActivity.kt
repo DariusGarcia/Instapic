@@ -27,7 +27,7 @@ class LoginActivity : AppCompatActivity() {
             loginUser(username, password)
         }
 
-        findViewById<Button>(R.id.login_button).setOnClickListener {
+        findViewById<Button>(R.id.signupBtn).setOnClickListener {
             val username = findViewById<EditText>(R.id.et_username).text.toString()
             val password = findViewById<EditText>(R.id.et_password).text.toString()
             signUpUser(username, password)
@@ -46,20 +46,24 @@ class LoginActivity : AppCompatActivity() {
             if (e == null) {
                 // User has successfully created a new account.
 
-                // TODO: Navigate the user to the main activity
-                // TODO: Show a toast to indicate user successfully signed up for an account.
+                // Navigate the user to the main activity after signing up.
+                goToMainActivity()
+                // Toast to indicate user successfully signed up for an account.
+                Toast.makeText(this, "successfully signed up!", Toast.LENGTH_SHORT).show()
             } else {
                 e.printStackTrace()
+                Toast.makeText(this, "Oh no! Error signing up...", Toast.LENGTH_SHORT).show()
                 // Sign up didn't succeed. Look at the ParseException
                 // to figure out what went wrong
             }
         }
     }
 
-    private fun loginUser (username: String, password: String) {
+    private fun loginUser(username: String, password: String) {
         ParseUser.logInInBackground(username, password, ({ user, e ->
             if (user != null) {
                 Log.i(TAG, "Successfully logged in user!")
+                Toast.makeText(this, "Welcome! Successfully logged in...", Toast.LENGTH_LONG).show()
                 goToMainActivity()
                 finish() // pressing the back button will close the app
             } else {

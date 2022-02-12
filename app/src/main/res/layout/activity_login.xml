@@ -7,13 +7,25 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="44dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/instagramlogo" />
+
     <EditText
         android:id="@+id/et_username"
         android:layout_width="200dp"
         android:layout_height="65dp"
-        android:layout_marginTop="56dp"
-        android:width="200dp"
+        android:layout_marginTop="360dp"
 
+        android:width="200dp"
         android:hint="Enter username"
         android:maxLength="15"
         android:textAlignment="center"
@@ -26,7 +38,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
 
     <EditText
         android:id="@+id/et_password"
@@ -45,13 +57,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_username" />
+        app:layout_constraintTop_toBottomOf="@+id/et_username"  />
 
     <Button
         android:id="@+id/login_button"
         android:layout_width="229dp"
         android:layout_height="60dp"
-        android:backgroundTint="#393C3D"
+        android:backgroundTint="#82936E"
         android:text="Login"
         android:textSize="30dp"
         android:typeface="monospace"
@@ -59,13 +71,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password"
-        app:layout_constraintVertical_bias="0.731" />
+        app:layout_constraintVertical_bias="0.123" />
 
     <Button
         android:id="@+id/signupBtn"
-        android:layout_width="140dp"
-        android:layout_height="47dp"
-        android:backgroundTint="@color/teal_700"
+        android:layout_width="158dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#82936E"
         android:text="Sign Up"
         android:textSize="15sp"
         android:typeface="monospace"

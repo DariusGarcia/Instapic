@@ -10,9 +10,10 @@ class InstapicApplication  : Application() {
         override fun onCreate() {
             super.onCreate()
 
-            ParseObject.registerSubclass(Post::class.java) // sets up the use for the Post class.
-
-            Parse.initialize( // Initializing parse right when the app first starts.
+            ParseObject.registerSubclass(Post::class.java)
+            // sets up the use for the Post class.
+            Parse.initialize(
+                // Initializing parse right when the app first starts.
                 Parse.Configuration.Builder(this)
                     .applicationId(getString(R.string.back4app_app_id))
                     .clientKey(getString(R.string.back4app_client_key))
