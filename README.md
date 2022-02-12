@@ -29,7 +29,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+An issue I faced in the development of this app was that I kept getting an exception error message that my posts were failing to send to the backend. I was eventually able to resolve this debugging code. 
 
 ## Open-source libraries used
 
