@@ -12,12 +12,13 @@
         android:layout_width="44dp"
         android:layout_height="46dp"
         android:layout_marginTop="24dp"
-        android:scaleType="center"
+
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/instagramlogo" />
+        app:srcCompat="@drawable/instagram_logo" />
 
     <EditText
         android:id="@+id/et_username"
@@ -63,8 +64,9 @@
         android:id="@+id/login_button"
         android:layout_width="229dp"
         android:layout_height="60dp"
-        android:backgroundTint="#82936E"
+        android:backgroundTint="@color/magoh"
         android:text="Login"
+        android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,10 +81,11 @@
         android:layout_height="52dp"
         android:backgroundTint="#82936E"
         android:text="Sign Up"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:typeface="monospace"
-        app:layout_constraintBottom_toBottomOf="parent"
 
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

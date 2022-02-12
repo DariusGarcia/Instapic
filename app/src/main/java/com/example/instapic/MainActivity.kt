@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.instagram_logo)
         // 1. Setting the description of the post
         // 2. A button to launch the camera to take a picture.
         // 3. An imageView to show the picture the user has taken.
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                 // TODO: Resetting the EditText field to be empty.
                 findViewById<EditText>(R.id.description).getText().clear()
                 // TODO: Reset the ImageView field to be empty.
-                findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.instagramlogo)
+                findViewById<ImageView>(R.id.imageView).setImageResource(R.drawable.instagram_logo)
             }
         }
     }
