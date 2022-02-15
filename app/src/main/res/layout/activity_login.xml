@@ -12,8 +12,6 @@
         android:layout_width="44dp"
         android:layout_height="46dp"
         android:layout_marginTop="24dp"
-
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +23,6 @@
         android:layout_width="200dp"
         android:layout_height="65dp"
         android:layout_marginTop="360dp"
-
         android:width="200dp"
         android:hint="Enter username"
         android:maxLength="15"
@@ -64,9 +61,9 @@
         android:id="@+id/login_button"
         android:layout_width="229dp"
         android:layout_height="60dp"
-        android:backgroundTint="@color/magoh"
+        android:backgroundTint="@color/acai"
         android:text="Login"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/shrine_pink"
         android:textSize="30dp"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,18 +76,16 @@
         android:id="@+id/signupBtn"
         android:layout_width="158dp"
         android:layout_height="52dp"
-        android:backgroundTint="#82936E"
+        android:backgroundTint="@color/shrine_pink"
         android:text="Sign Up"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/acai"
         android:textSize="15sp"
         android:typeface="monospace"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_button"
         app:layout_constraintVertical_bias="0.234" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
