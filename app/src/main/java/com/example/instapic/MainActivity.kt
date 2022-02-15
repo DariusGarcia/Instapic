@@ -9,11 +9,9 @@ import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.Toast
+import android.widget.*
 import androidx.core.content.FileProvider
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.parse.*
 import java.io.File
 
@@ -54,6 +52,26 @@ class MainActivity : AppCompatActivity() {
             // Launch camera to let user take picture.
             onLaunchCamera()
         }
+
+        findViewById<BottomNavigationView>(R.id.bottom_navigation).setOnItemSelectedListener {
+            item -> //creates variable called item
+
+            when (item.itemId) {
+
+                R.id.action_home -> {
+                    // TODO Naviagate to the home scree
+                    Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
+                }
+                R.id.action_compose -> {
+                    Toast.makeText(this, "Compose", Toast.LENGTH_SHORT).show()
+                }
+                R.id.action_profile -> {
+                    Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show()
+                }
+            }
+            // Return true to say that we've handled this user interaction on the item.
+            true
+        }
         queryPosts()
     }
 
@@ -64,6 +82,8 @@ class MainActivity : AppCompatActivity() {
         post.setDescription(description)
         post.setUser(user)
         post.setImage(ParseFile(file))
+
+
         // .saveInBackground: takes this Parse object we created and set fields for and send it to
         // the Parse server.
         post.saveInBackground { exception ->
