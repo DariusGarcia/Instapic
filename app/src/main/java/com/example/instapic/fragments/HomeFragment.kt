@@ -39,35 +39,42 @@ class HomeFragment : Fragment() {
         // 3. Create adapter that will bridge data and row layout
         // 4. Set adapter on RecyclerView
         // 5. Set layout manager on RecyclerVIew
+
+        queryPosts()
     }
-}
 
-// Query for all posts in our server.
-fun queryPosts() {
 
-    // Specify which class to query
-    val query: ParseQuery<Post> = ParseQuery.getQuery(Post::class.java)
-    // Find all Post objects and return it to us.
-    query.include(Post.KEY_USER)
-    query.findInBackground(object : FindCallback<Post> {
-        override fun done(posts: MutableList<Post>?, e: ParseException?) {
-            if (e != null) {
-                // Something has went wrong
-                Log.e(TAG, "Error fetching posts")
-            } else {
-                if (posts != null) {
-                    for (post in posts) {
-                        Log.i(TAG, "Post: " + post.getDescription() + " , username: " +
-                                post.getUser()?.username)
+    // Query for all posts in our server.
+    fun queryPosts() {
+
+        // Specify which class to query
+        val query: ParseQuery<Post> = ParseQuery.getQuery(Post::class.java)
+        // Find all Post objects and return it to us.
+        query.include(Post.KEY_USER)
+        query.findInBackground(object : FindCallback<Post> {
+            override fun done(posts: MutableList<Post>?, e: ParseException?) {
+                if (e != null) {
+                    // Something has went wrong
+                    Log.e(TAG, "Error fetching posts")
+                } else {
+                    if (posts != null) {
+                        for (post in posts) {
+                            Log.i(TAG, "Post: " + post.getDescription() + " , username: " +
+                                    post.getUser()?.username
+                            )
+                        }
                     }
                 }
             }
-        }
+        })
+    }
 
-    })
     companion object {
         const val TAG = "FeedFragment"
     }
+
 }
+
+
 
 

@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.instapic.fragments.ComposeFragment
 import com.example.instapic.fragments.HomeFragment
+
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.parse.*
 import java.io.File
@@ -62,7 +63,7 @@ class MainActivity : AppCompatActivity() {
         // Set default selection
         findViewById<BottomNavigationView>(R.id.bottom_navigation).selectedItemId = R.id.action_home
 
-        queryPosts()
+        // queryPosts()
     }
 
 

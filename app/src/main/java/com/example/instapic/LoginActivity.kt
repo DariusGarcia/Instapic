@@ -14,8 +14,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        // check if user is arl logged in
-        // if there is, take them to mainactivity
+        // check if user is already logged in
+        // if there is, take them to mainActivity
 
         if (ParseUser.getCurrentUser() != null) {
             goToMainActivity()
