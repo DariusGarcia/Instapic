@@ -14,6 +14,7 @@ import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.instapic.fragments.ComposeFragment
+import com.example.instapic.fragments.HomeFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.parse.*
 import java.io.File
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
 
                 R.id.action_home -> {
-
+                    fragmentToShow = HomeFragment()
                     //Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
                 }
                 R.id.action_compose -> {
@@ -57,33 +58,13 @@ class MainActivity : AppCompatActivity() {
             // Return true to say that we've handled this user interaction on the item.
             true
         }
+
+        // Set default selection
+        findViewById<BottomNavigationView>(R.id.bottom_navigation).selectedItemId = R.id.action_home
+
         queryPosts()
     }
 
-    // Query for all posts in our server.
-    fun queryPosts() {
-
-        // Specify which class to query
-        val query: ParseQuery<Post> = ParseQuery.getQuery(Post::class.java)
-        // Find all Post objects and return it to us.
-        query.include(Post.KEY_USER)
-        query.findInBackground(object : FindCallback<Post> {
-            override fun done(posts: MutableList<Post>?, e: ParseException?) {
-                if (e != null) {
-                    // Something has went wrong
-                    Log.e(TAG, "Error fetching posts")
-                } else {
-                    if (posts != null) {
-                        for (post in posts) {
-                            Log.i(TAG, "Post: " + post.getDescription() + " , username: " +
-                                    post.getUser()?.username)
-                        }
-                    }
-                }
-            }
-
-        })
-    }
 
     companion object {
         const val TAG = "MainActivity"
