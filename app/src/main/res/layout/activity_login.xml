@@ -12,22 +12,39 @@
         android:layout_width="44dp"
         android:layout_height="46dp"
         android:layout_marginTop="24dp"
-
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/instagram_logo" />
 
+    <TextView
+        android:id="@+id/tv_createPost"
+        android:layout_width="352dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="@font/shrikhand"
+        android:letterSpacing="-0.064"
+        android:text="Welcome!"
+        android:textColor="@color/acai"
+        android:textSize="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.271"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <EditText
         android:id="@+id/et_username"
         android:layout_width="200dp"
         android:layout_height="65dp"
         android:layout_marginTop="360dp"
-
         android:width="200dp"
+        android:fontFamily="@font/rubik_regular"
+        android:foregroundTint="#000000"
         android:hint="Enter username"
+        android:letterSpacing="-0.04"
         android:maxLength="15"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
@@ -48,7 +65,9 @@
         android:layout_marginTop="8dp"
         android:width="200dp"
         android:ems="10"
+        android:fontFamily="@font/rubik_regular"
         android:hint="Enter password"
+        android:letterSpacing="-0.04"
         android:maxLength="15"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display4"
@@ -58,15 +77,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_username"  />
+        app:layout_constraintTop_toBottomOf="@+id/et_username" />
 
     <Button
         android:id="@+id/login_button"
         android:layout_width="229dp"
         android:layout_height="60dp"
-        android:backgroundTint="@color/magoh"
+        android:backgroundTint="@color/acai"
+        android:fontFamily="@font/rubik_regular"
+        android:letterSpacing="-0.04"
         android:text="Login"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/shrine_pink"
         android:textSize="30dp"
         android:typeface="monospace"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,18 +100,18 @@
         android:id="@+id/signupBtn"
         android:layout_width="158dp"
         android:layout_height="52dp"
-        android:backgroundTint="#82936E"
+        android:backgroundTint="@color/shrine_pink"
+        android:fontFamily="@font/rubik_regular"
+        android:letterSpacing="-0.04"
         android:text="Sign Up"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/acai"
         android:textSize="15sp"
         android:typeface="monospace"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_button"
         app:layout_constraintVertical_bias="0.234" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
