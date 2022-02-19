@@ -6,16 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".fragments.ComposeFragment">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="44dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/instagram_logo" />
+
 
     <EditText
         android:id="@+id/description"

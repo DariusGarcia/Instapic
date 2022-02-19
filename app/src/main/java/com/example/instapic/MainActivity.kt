@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.example.instapic.fragments.ComposeFragment
 import com.example.instapic.fragments.HomeFragment
+import com.example.instapic.fragments.ProfileFragment
 
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.parse.*
@@ -41,13 +42,14 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.action_home -> {
                     fragmentToShow = HomeFragment()
-                    //Toast.makeText(this, "Home", Toast.LENGTH_SHORT).show()
+
                 }
                 R.id.action_compose -> {
                     fragmentToShow = ComposeFragment()
 
                 }
                 R.id.action_profile -> {
+                    fragmentToShow = ProfileFragment()
 
                 }
             }
