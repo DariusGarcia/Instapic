@@ -1,6 +1,6 @@
 # Project 3 - Instapic
 
-Instapic is a photo sharing app similar to Instagram but using Parse as its backend.
+Instapic is a photo sharing app similar to Instagram but using Back4App as its backend.
 
 Time spent: 30 hours spent in total
 
