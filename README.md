@@ -2,8 +2,6 @@
 
 Instapic is a photo sharing app similar to Instagram but using Back4App as its backend.
 
-Time spent: 30 hours spent in total
-
 ## User Stories
 
 The following **required** functionality is completed:
