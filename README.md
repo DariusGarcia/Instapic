@@ -1,6 +1,6 @@
-# Project 3 - Instapic
+# Instapic
 
-Instapic is a photo sharing app similar to Instagram but using Back4App as its backend.
+Instapic is a native Android mobile app that is a photo sharing app similar to Instagram, but uses Back4App as its backend.
 
 ## User Stories
 
@@ -22,12 +22,6 @@ The following **optional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <img src='https://i.imgur.com/1CDPsQh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-I was having an issue while trying to run the app on a seperate android device where it was not letting me log in or sign up. It wasn't letting me initially because the wifi was off so there was no connection to the backend serve. 
 
 ## Open-source libraries used
 
@@ -51,11 +45,9 @@ I was having an issue while trying to run the app on a seperate android device w
     limitations under the License.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-# Project 3 - Instapic
+# Instapic
 
 Instapic is a photo sharing app similar to Instagram but using Parse as its backend.
-
-Time spent: 15 hours spent in total
 
 ## User Stories
 
@@ -75,11 +67,11 @@ Here's a walkthrough of implemented user stories:
 
 <img src='https://i.imgur.com/9Yzz7Ps.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
 
 ## Notes
 
-An issue I faced in the development of this app was that I kept getting an exception error message that my posts were failing to send to the backend. I was eventually able to resolve this debugging code. 
+An issue I faced in the development of this app was that I kept getting an exception error message that my posts were failing to send to the backend. I was eventually able to resolve this by debugging code. 
 
 ## Open-source libraries used
 
